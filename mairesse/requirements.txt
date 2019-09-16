@@ -1,0 +1,8 @@
+http://farm2.user.srcf.net/research/personality/recognizer
+
+ First check that the required components are correctly installed:
+
+    Java Runtime Environment (JRE) 1.5 or later
+    Weka 3.4.3
+    MRC Psycholinguistic Database
+    Linguistic Inquiry and Word Count 2001 dictionary file (email author for details) 

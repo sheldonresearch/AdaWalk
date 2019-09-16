@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jmrc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-cli-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weka.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

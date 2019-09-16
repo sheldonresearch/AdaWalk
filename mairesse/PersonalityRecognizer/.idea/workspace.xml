@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23f9129c-b834-4042-b11e-a6566f08498f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/blogcatalog.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/blogcatalog/parameter_plan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/scoring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/scoring5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/simple_clustering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/simple_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/simple_walks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/skipgram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/text_graph.adjlist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/try_new_things.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myanalysis/walks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG103.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG104.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG105.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG106.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG107.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG108.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG109.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG110.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG112.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG113.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG114.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG116.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG117.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG118.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG120.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG122.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG124.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG125.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG126.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG127.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG129.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG130.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG131.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG134.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG135.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG137.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG138.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG141.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG142.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG143.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG144.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG145.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG146.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG147.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG148.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG149.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG150.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG151.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG152.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG153.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG154.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG155.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG156.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG158.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG159.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG160.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG161.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG162.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG163.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG164.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG165.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG166.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG167.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG168.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG169.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG170.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG171.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG172.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG173.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG174.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG175.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG176.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG178.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG179.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG180.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG181.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG182.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG183.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG184.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG186.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG187.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG189.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG190.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG191.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG192.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG193.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG194.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG195.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG196.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG197.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG198.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG199.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG201.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG202.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG204.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG205.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG207.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG209.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG210.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG213.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG214.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG216.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG217.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG218.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG219.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG220.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG221.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG222.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG223.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG224.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG225.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG226.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG227.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG228.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG229.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG232.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG233.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG234.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG235.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG236.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG237.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG239.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG241.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG242.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG243.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG244.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG246.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG247.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG248.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG249.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG250.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG251.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG252.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG253.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG254.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG255.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG256.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG257.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG259.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG260.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG261.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG262.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG263.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG265.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG266.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG267.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG268.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG269.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG270.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG271.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG272.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG273.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG274.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG275.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG276.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG277.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG278.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG279.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG280.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG281.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG282.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG283.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG284.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG285.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG286.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG287.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG288.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG289.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG290.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG291.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG292.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG293.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG294.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG295.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG296.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG297.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG298.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG299.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG300.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG303.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG304.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG305.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG306.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG308.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG309.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG310.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG311.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG312.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG313.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG314.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG315.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG317.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG318.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG319.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG320.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG321.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG322.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG323.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG324.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG325.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG326.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG327.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG328.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG329.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG330.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG331.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG332.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG333.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG334.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG335.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG336.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG337.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG338.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG339.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG340.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG341.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG343.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG344.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG345.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG346.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG347.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG348.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG350.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG351.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG352.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG353.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG355.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG357.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG358.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG359.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG360.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG361.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG363.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG364.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG365.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG366.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG367.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG368.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG369.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG370.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG371.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG372.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG373.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG374.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG375.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG376.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG377.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG378.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG379.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG380.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG381.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG382.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG384.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG385.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG386.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG387.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG388.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG389.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG390.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG391.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG392.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG393.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG394.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG395.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG396.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG397.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG398.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG399.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG400.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG401.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG402.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG403.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG404.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG405.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG406.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG407.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG408.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG409.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG410.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG411.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG412.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG413.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG414.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG415.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG416.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG417.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG418.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG419.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG420.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG421.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG422.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG423.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG424.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG425.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG426.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG427.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG428.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG430.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG431.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG432.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG433.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG434.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG435.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG436.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG437.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG438.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG439.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG441.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG442.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG45.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG47.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG49.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG51.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG52.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG53.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG54.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG55.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG57.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG58.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG59.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG61.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG62.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG63.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG65.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG66.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG67.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG68.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG69.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG70.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG71.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG72.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG74.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG76.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG78.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG79.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG81.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG83.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG84.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG86.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG88.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG89.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG90.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG92.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG93.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG94.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG96.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG97.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/VLOG99.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outfeatures.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../similarity/construct_stop_word_youtube.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../similarity/construct_stop_word_youtube.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._doc2vect_cosSim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._lda_HellingerDistance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._lda_cosine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._lda_euclidean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_braycurtis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_canberra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_chebyshev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_cityblock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_correlation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_cosine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_dice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_euclidean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_hamming.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_jaccard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_kulsinski.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_mahalanobis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_matching.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_minkowski.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_rogerstanimoto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_russellrao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_seuclidean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_sokalmichener.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_sokalsneath.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_sqeuclidean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._mair_yule.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._textSim_traitSim_x-y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._text_sim_average_cos_stopword_removed_traits_sim_cos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._text_sim_doc2vec_stopword_removed_traits_sim_cos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._text_sim_lda_stopword_removed_traits_sim_cos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._text_sim_tfidf_stopword_removed_traits_sim_cos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._tfidf_cosSim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._tfidf_cosine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/figures/youtube/._tfidf_euclidean.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._ClusteringCoefficient_probabilistic_sampling" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._ClusteringCoefficient_threshhold_0.025" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.025" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.055" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.065" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.075" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._DegreeDistribution_threshhold_0.125" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_probabilistic_sampling" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.025" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.055" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.075" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_0.125" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._EigenvectorCentrality_threshhold_095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_probabilistic_sampling" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.025" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.055" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.065" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.075" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._Modularity_threshhold_0.125" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_probabilistic_sampling.gephi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_probabilistic_sampling.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_probabilistic_sampling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.025.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.05.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.055.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.06.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.065.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.07.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.075.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.08.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.085.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.085.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.09.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.095.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.1.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.125.gexf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/networks/._networks_threshhold_0.125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tutorial/tutorial_part3_0912.md" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1658104219">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="2" value="1" />
+          <entry key="PersonalityRecognizer" value="1" />
+          <entry key="arff" value="2" />
+          <entry key="class" value="3" />
+          <entry key="compile" value="2" />
+          <entry key="csv" value="2" />
+          <entry key="groovy" value="1" />
+          <entry key="java" value="5" />
+          <entry key="js" value="1" />
+          <entry key="outfeatures" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="snippet" value="3" />
+          <entry key="txt" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="5" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Properties" value="1" />
+          <entry key="Scratch" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="PersonalityRecognizer" value="5" />
+          <entry key="java" value="123" />
+          <entry key="snippet" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="123" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Scratch" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/recognizer/PersonalityRecognizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="1059" column="13" selection-start-line="1059" selection-start-column="13" selection-end-line="1059" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4285#4315#0" />
+                <element signature="e#4683#4789#0" />
+                <element signature="e#4815#4879#0" />
+                <element signature="e#5149#5280#0" />
+                <element signature="e#8144#14195#0" />
+                <element signature="e#14198#15123#0" />
+                <element signature="e#37254#40562#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/recognizer/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#countMatches#0;class#Utils#0" />
+                <element signature="method#printHash#0;class#Utils#0" />
+                <element signature="method#printMap#0;class#Utils#0" />
+                <element signature="method#readFile#0;class#Utils#0" />
+                <element signature="method#readDir#0;class#Utils#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>args</find>
+      <find>main</find>
+      <find>Features and scores written in arff file</find>
+      <find>appDir</find>
+      <find>attributeFile</find>
+      <find>.arff dataset file</find>
+      <find>.arff</find>
+      <find>outputArffFile</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+          <option name="moduleName" value="PersonalityRecognizer" />
+          <option name="title" value="PersonalityRecognizer (Bundled Groovy 2.4.15)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_2.snippet" />
+        <option value="$PROJECT_DIR$/PersonalityRecognizer" />
+        <option value="$PROJECT_DIR$/outfeatures" />
+        <option value="$PROJECT_DIR$/outfeatures.csv" />
+        <option value="$PROJECT_DIR$/src/recognizer/PersonalityRecognizer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1985" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PersonalityRecognizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PersonalityRecognizer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PersonalityRecognizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PersonalityRecognizer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PersonalityRecognizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547274391650" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/weka.jar!/" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29246232" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="PersonalityRecognizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recognizer.PersonalityRecognizer" />
+      <module name="PersonalityRecognizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recognizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PersonalityRecognizer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23f9129c-b834-4042-b11e-a6566f08498f" name="Default Changelist" comment="" />
+      <created>1535094148246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535094148246</updated>
+      <workItem from="1535094150510" duration="1661000" />
+      <workItem from="1535095827454" duration="4934000" />
+      <workItem from="1547090060801" duration="3245000" />
+      <workItem from="1547196103456" duration="678000" />
+      <workItem from="1547271230082" duration="2352000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12870000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1984" y="-11" width="1857" height="1092" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15609486" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997242" weight="0.3298647" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89851075" weight="0.42663893" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.101489246" side_tool="true" visible="true" weight="0.42663893" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.33922997" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/recognizer/LIWCDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_1.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/VLOG1.txt" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console_2.snippet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PersonalityRecognizer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-cli-1.0.jar!/org/apache/commons/cli/CommandLineParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfeatures" />
+    <entry file="file://$PROJECT_DIR$/license.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfeatures.csv" />
+    <entry file="file://$PROJECT_DIR$/examples.arff" />
+    <entry file="file://$PROJECT_DIR$/test.txt" />
+    <entry file="file://$PROJECT_DIR$/output.txt" />
+    <entry file="jar://$PROJECT_DIR$/lib/weka.jar!/weka/core/Instances.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PersonalityRecognizer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="6" selection-start-line="11" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfeatures.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypersonality_text.txt" />
+    <entry file="file://$PROJECT_DIR$/src/recognizer/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#countMatches#0;class#Utils#0" />
+            <element signature="method#printHash#0;class#Utils#0" />
+            <element signature="method#printMap#0;class#Utils#0" />
+            <element signature="method#readFile#0;class#Utils#0" />
+            <element signature="method#readDir#0;class#Utils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/recognizer/PersonalityRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1059" column="13" selection-start-line="1059" selection-start-column="13" selection-end-line="1059" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4285#4315#0" />
+            <element signature="e#4683#4789#0" />
+            <element signature="e#4815#4879#0" />
+            <element signature="e#5149#5280#0" />
+            <element signature="e#8144#14195#0" />
+            <element signature="e#14198#15123#0" />
+            <element signature="e#37254#40562#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29246232" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29246232" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PersonalityRecognizer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29246232" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>recognizer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29246232" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

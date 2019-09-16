@@ -1,0 +1,32 @@
+This directory contains the MRC Psycholinguistic Database Machine Usable 
+Dictionary.
+
+The files are:
+
+README   - this file.
+
+mrc2.dct - the dictionary file 
+mrc2.n   - the nroff/troff source of its documentation for UNIX systems 
+         - use ms macros.
+mrc2.doc - the formated documentation for other systems.
+
+dict.c   - the C source of a program to access entries in the dictionary 
+           from specifications of their linguistic attributes.
+dict.1   - the nroff/troff source of its documentation for UNIX systems 
+         - use man macros.
+dict.man -  the formated documentation for other systems.
+
+getentry.c - the C source of a program to access entries in the dictionary 
+            from a sorted list of words.
+getentry.1 - the nroff/troff source of its documentation for UNIX systems 
+           - use man macros.
+getentry.man -  the formated documentation for other systems.
+
+PsychDict.c - the C source of an program to reduce the dictionary entries 
+              and size down to those containing psycholinguistic data.
+PsychDict.1 - the nroff/troff source of its documentation for UNIX systems 
+            - use man macros.
+PsychDict.man -  the formated documentation for other systems.
+
+The software was produced by Michael Wilson, Informatics Division,
+Rutherford Appleton Laboratories.

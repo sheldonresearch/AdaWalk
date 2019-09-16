@@ -1,0 +1,53 @@
+.\" dummy line
+.TH getentry 1 "27 April 1987"
+.UC 4
+.SH NAME
+getentry \- find entries for a set of words in the MRC Psycholinguistic Database 
+.SH SYNOPSIS
+.B getentry 
+.I filename
+.SH DESCRIPTION
+This utility will select the full entries in the dictionary that correspond to an
+alphabetically sorted list
+of words (one word per line) in a file, when given the name of that file. The entries
+are output to standard output.
+.PP
+For example:
+.PP
+.I
+getentry filename.in > filename.out
+.PP
+will produce the entries for the alphabetically sorted words in 
+.I filename.in
+if they were present in the dictionary, in the file 
+.I filename.out.
+.PP
+Although it is possible to use 
+.I grep(1),
+to perform such searches, this utility is faster, since it only searches the WORD
+field in the dictionary, and can accept a longer list of words for searching.
+.PP
+The input file should be alphabetically sorted before using this utility. This 
+can be achieved by using the 
+.I sort(1)
+command.
+
+.SH OPTIONS
+.I none
+.fi
+.SH "SEE ALSO"
+M. Coltheart (1981)
+The MRC Psycholinguistic Database
+.B
+Quarterly Journal of Experimental Psychology, 33A, 
+497-505 
+.PP
+M. Wilson (1987)
+MRC Psycholinguistic Database: Machine Usable Dictionary, Version 2.
+Memo - IKBS Section, Rutherford Appleton Lab.
+.SH AUTHORS
+.nf
+		Michael Wilson
+		Rutherford Appleton Laboratory,
+		Oxon, U.K.
+.fi

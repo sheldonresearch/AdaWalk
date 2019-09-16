@@ -1,0 +1,946 @@
+.nf
+.ps -2
+# IKBS/SN16/86
+.ps +2
+.sp 16
+.ps +4
+.vs +4
+.B
+.ce 3
+MRC Psycholinguistic Database:
+Machine Usable Dictionary.
+Version 2.00
+.R
+.ps -2
+.vs -4
+.sp 8
+.ce 6
+Informatics Division
+Science and Engineering Research Council
+Rutherford Appleton Laboratory
+Chilton,
+Didcot,
+Oxon, OX11 0QX
+.sp 6
+.ce 2
+Michael Wilson
+1 April 1987
+.fi
+.nr PO 1i
+.bp
+.ce
+.B
+MRC Machine Usable Dictionary, version 2.
+.R
+
+.LP
+The MRC Psycholinguistic Database version 1, was provided as an on-line service (see Coltheart, 1981b).
+The service drew on three files and several access programs. The first file
+was a dictionary of words, the second and third files were sets of
+word association norms from the Edinburgh Thesaurus. The service has now
+been discontinued. 
+
+This second version of the MRC Psycholinguistic Database is being provided as
+a computer usable resource rather than as a service. An updated version of the dictionary file from the database (referred to here as MRC2.DCT) is being provided for public research use along with some programs which can be used either to access the dictionary, or as examples on which to model programs 
+which match users' specific needs. This database dictionary differs from other machine usable dictionaries
+in that it includes not only syntactic information
+but also psychological data for the entries (see Amsler, 1984 for a review of other machine readable dictionaries). It also differs from most conventional dictionaries in that it does not currently attempt to provide any semantic information. It is designed to be of use to psycholinguists in selecting stimulus materials for testing; for use by 
+researchers in Artificial Intelligence as a source of information required for natural language processing and cognitive simulation, and for use
+by computer scientists who wish to use the word lists and syntactic information in the design of text processors.
+
+The MRC Psycholinguistic Database: Machine Usable Dictionary and utility
+programs are available for research purposes from the Oxford Text Archive as item 1054 on their list at a nominal fee
+to cover handling costs. Their address is:
+.nf
+
+Oxford Text Archive
+Oxford University Computing Service
+13 Banbury Road,
+Oxford OX2 6NN
+U.K.
+
+Tel: Oxford (0865) 56721
+
+JANET electronic mail address: ARCHIVE@UK.AC.OX.VAX3
+
+.fi
+.B
+The Machine Usable Dictionary File.
+.R
+
+The file contains 150837 words and provides information about 26
+different linguistic properties, although it is not the case that
+information about every property is available for every one of the
+150837 words: nobody, for example, has yet collected imagery ratings
+on such a large set of words, and thus only 9240 of the words
+possess an imagery rating.
+
+The dictionary file does not contain any information which is original to it, but was assembled by merging a number of smaller databases of limited availability:
+
+a) the tape dictionary of Dolby,
+Resnikoff and MacMurray (1963) which was created by taking all the left
+justified bold faced words from the Shorter Oxford English Dictionary together
+with the parts of speech given by that dictionary. In addition, words were taken from 
+the Cornell University tape of 20,000 commonly used words, and the
+parts of speech for all these words found in the third edition of Webster's
+New International Dictionary.
+
+b) the Edinburgh Associative Thesaurus (Kiss,  Armstrong, Milroy and
+Piper, 1973); 
+
+c) the Colerado Norms (Toglia and Battig, 1978);
+
+d) the Pavio Norms (unpublished, these are an expansion  of the norms
+of Pavio, Yuille and Madigan, 1968); 
+
+e) the Gilhooly-Logie norms (Gilhooly and Logie, 1980); 
+
+f)  the  Kucera-Francis written  frequency  count (Kucera  and Francis, 1967);
+
+g) the Thorndike-Lorge written frequency count (Thorndike and  Lorge, 1944; L
+count); 
+
+h) the  phonetic  transcriptions  from   Daniel  Jones'  Pronouncing
+Dictionary of English Language, 12th Edition (see Guierre, 1966).  
+
+i) 2500 proper names from the Machine Usable Version of the 
+Oxford Advanced Learner's Dictionary (Mitton, 1986) which were added to the published version of the dictionary and are not covered by the copyright held by the Oxford University Press.
+
+j) The frequency count for spoken English from the London-Lund
+Corpus of English Conversation (Svartvik and Quirk, 1980; Brown, 1984).
+
+The dictionary file currently occupies 11 Mbyte as a sequential UNIX file.
+Each line of the file represents the field for one word. The longest 
+entry is 130 characters. The structure 
+of each entry will be:
+
+040320021615167000000093057530228435500000 JJ S  ABLE|eI/bl|eIbl|20
+
+The composition of the dictionary file is summarised in Table 1, which specifies
+the linguistic properties described in an entry.  The first
+column of Table 1 indicates the columns/field in  the file  containing the data.
+The last four properties are held in variable length fields  separated by
+a
+.B
+|
+.R
+character. The second column indicates the name of the data field used
+elsewhere in programs and documentation.  The  third column specifies
+the  identity  of  the  linguistic  property,  and  the fourth column
+indicates the number of words in  the database  for which information
+about a particular linguistic property is available. The first fourteen
+properties are stored in the file as numerical values. For these properties, the 
+occurrence count refers to the number of non zero entries.
+
+.KF
+.ps -2
+.TS
+center tab (%) box ;
+c c c c
+l l l n.
+column%name%property%occurrences
+
+1-2%NLET%Number of letters in the word%150837
+3-4%NPHON%Number of phonemes in the word%38438
+5%NSYL%Number of syllables in the word%89402
+6-10%K-F-FREQ%Kucera and Francis written frequency%29778
+11-12%K-F-NCATS%Kucera and Francis number of categories%29778
+13-15%K-F-NSAMP%Kucera and Francis number of samples%29778
+16-21%T-L-FREQ%Thorndike-Lorge frequency%25308
+22-25%BROWN-FREQ%Brown verbal frequency%14529
+26-28%FAM%Familiarity%9392
+29-31%CONC%Concreteness%8228
+32-34%IMAG%Imagery%9240
+35-37%MEANC%Mean Colerado Meaningfulness%5450
+38-40%MEANP%Mean Pavio Meaningfulness%1504
+41-43%AOA%Age of Acquisition%3503
+44%TQ2%Type%44976
+45%WTYPE%Part of Speech%150769
+46%PDWTYPE%PD Part of Speech%38390
+47%ALPHSYL%Alphasyllable%15938
+48%STATUS%Status%89550
+49%VAR%Varient Phoneme%1445
+50%CAP%Written Capitalised%4585
+51%IRREG%Irregular Plural%23111
+|%WORD%the actual word%150837
+|%PHON%Phonetic Transcription%38420
+|%DPHON%Edited Phonetic Transcription%136982
+|%STRESS%Stress Pattern%38390
+.TE
+.ps +2
+
+.B
+Table 1.
+.R
+The dictionary file.
+
+.KE
+
+Some of the properties listed in Table 1 are obvious; others require
+explanation as follows:
+
+.B
+NLET
+.R
+
+The distribution of entries in the WORD field by the number of letters that
+they contain is shown in Table 2.
+
+.KF
+
+.ps -2
+.TS
+center tab (%) box ;
+c c 
+n n.
+Number of Ocurrences%NLET
+
+31%1 
+168%2 
+1342%3 
+4719%4 
+10199%5 
+16818%6 
+21118%7 
+22302%8 
+20426%9 
+16409%10 
+11697%11 
+7566%12 
+4451%13 
+2342%14 
+1158%15 
+479%16 
+250%17 
+81%18 
+32%19 
+14%20 
+4%21 
+1%22 
+2%23 
+.TE
+.ps +2
+
+.B
+Table 2.
+.R
+The distribution of word lengths given by NLET.
+
+.KE
+
+.B
+NPHON
+.R
+
+The distribution of entries in the WORD field by the number of phonemes that
+they contain is shown in Table 3.
+
+.KF
+.ps -2
+.TS
+center tab (%) box ;
+c c 
+n n.
+Number of Ocurrences%NPHON
+
+109060%0 
+32%1 
+276%2 
+1442%3 
+3396%4 
+4561%5 
+4985%6 
+4691%7 
+4199%8 
+3317%9 
+2429%10 
+1536%11 
+862%12 
+450%13 
+206%14 
+110%15 
+42%16 
+9%17 
+3%18 
+3%19 
+.TE
+.ps +2
+
+.B
+Table 3.
+.R
+The distribution of phoneme counts given by NPHON.
+
+.KE
+
+.B
+NSYL
+.R
+
+The distribution of entries in the WORD field by the number of syllables that
+they contain is shown in Table 4.
+
+.KF
+.ps -2
+.TS
+center tab (%) box ;
+c c 
+n n.
+Number of Ocurrences%NSYL
+
+58081%0 
+12485%1 
+32837%2 
+27751%3 
+14159%4 
+4530%5 
+856%6 
+134%7 
+14%8 
+1%9 
+.TE
+.ps +2
+
+.B
+Table 4.
+.R
+The distribution of syllable counts given by NSYL.
+
+.KE
+
+.B
+K-F-FREQ, K-F-NCATS, K-F-NSAMP
+.R
+
+The first of these refers to a word's frequency of occurrence as
+given in the norms of Kucera and Francis (1967). The maximum frequency
+in the file is 69971, the minimum is 0. The meaning of
+K-F-NCATS and K-F-NSAMP are defined by Kucera and Francis (1967).
+
+.KS
+.B
+T-L-FREQL
+.R
+
+This is the frequency of occurrence as given in the L count of
+Thorndike and Lorge (1942). If you plan to use this frequency count,
+you are advised to read details about it in the Thorndike -Lorge
+book. For example, the frequency value of a singular word which has
+a regular plural 
+.B
+includes
+.R
+the frequency of the plural form, and this is true for other kinds
+of derivations too.
+.KE
+
+.B
+BROWN-FREQ
+.R
+
+This stands for the frequency of occurence in verbal language derived
+from the London-Lund Corpus of English Conversation by Brown (1984). 
+There are 14529 entries for 8985 different strings in the WORD field. 
+The range of entries is 0 - 6833 with a mean of 35 and a standard 
+deviation of 252.
+
+.B
+FAM
+.R
+
+This stands for 'printed familiarity'. The FAM values were derived
+from merging three sets of familiarity norms: Pavio (unpublished),
+Toglia and Battig (1978) and Gilhooly and Logie (1980). The method
+by which these three sets of norms were merged is described in
+detail in Appendix 2 of the MRC Psycholinguistic Database User Manual (Coltheart, 1981a). This method may not meet
+with everyone's approval. FAM values lie in the range 100 to 700 with 
+the maximum entry of 657, a mean of 488 and a standard deviation of 99:
+note that they are integer values (in the original norms the
+equivalent range was 1.00 to 7.00). 
+
+.KS
+.B
+CONC
+.R
+
+This is concreteness, and it too is derived from a merging of the
+Pavio, Colerado, and Gilhooly-Logie norms: details of merging are
+given in  Appendix 2 of the MRC Psycholinguistic Database User
+Manual (Coltheart, 1981a). CONC values are integer, in the range 100
+to 700 (min: 158; max 670; mean 438; s.d. 120).
+.KE
+
+.B
+IMAG
+.R
+
+This is imageability, derived from merging the three sets of norms
+referred to above, and having values in the range 100 to 700 (min 129;
+max 669; mean 450; s.d. 108).
+
+.B
+MEANC
+.R
+
+These are the meaningfulness ratings from the Toglia and Battig
+(1978), multiplied by 100 to produce a range from 100 to 700 (min 127;
+max 667; mean 415; s.d. 78).
+
+.B
+MEANP
+.R
+
+This is the meaningfulness from the norms of Pavio (unpublished)
+multiplied by 100 to produce a range from 100 to 700. The two sets
+of meaningfulness ratings were not merged because their correlations
+were low ( only + .529) and the mean values for a set of words
+common to the two sets of norms were very low (see Toglia and
+Battig, 1978, Table 2). These differences are due to differences in
+the instructions to subjects. Thus the two sets of meaningfulness
+ratings are not comparable, and so were kept seperate (min 192;
+max 922; mean 600; s.d. 107).
+
+.KS
+.B
+AOA
+.R
+
+This is age of acquisition from the norms of Gilhooly and Logie
+(1980), multiplied by 100 to produce a range from 100 to 700 (min 125;
+max 697; mean 405; s.d. 120).
+.KE
+
+.B
+TQ2
+.R
+
+When TQ2 has the value Q (40810 occurrences), this word is a derivational varient of
+another word in the dictionary file (e.g. baptist, from baptism). When TQ2
+has the value 2 (4166 occurrences), the word ends in the letter R and this R is not
+pronounced, except when the next word begins with a vowel. When an entry should have 
+both values 2 and Q for this attribute, Q is given in this field, and both values
+are given in DPHON.
+
+.B
+WTYPE
+.R
+
+This is syntactic category as represented in the SOED database
+assembled by Dolby, Resnikoff and MacMurray (1963). There are ten
+different syntactic categories, coded as shown in Table 5.
+
+.KF
+.TS
+center tab (%) box ;
+c | c | c.
+Syntactic Category%Code%occurrences
+_
+.T&
+l | c | n.
+Noun%N%77355
+Adjective%J%25547
+Verb%V%30725
+Adverb%A%4243
+Preposition%R%230
+Conjunction%C%108
+Pronoun%U%134
+Interjection%I%352
+Past Participle%P%5939
+Other%O%6136
+.TE
+
+.B
+Table 5. 
+.R
+Syntactic Category codes for WTYPE.
+
+.KE
+
+.B
+PDWTYPE
+.R
+
+When you are interested in syntactic category, WTYPE can sometimes
+be unsatisfactory. For example, the words FREEZE and HARASS are
+Nouns according to WTYPE (as well as verbs); and indeed when these
+are looked up in SOED or Webster's, they are described as nouns. If
+you want to avoid such esoteric usages, PDWTYPE may be useful. It
+refers to the syntactic categories given in Jones' Pronouncing
+Dictionary (Jones, 1963), and very unusual uses of words are not
+considered. However PDWTYPE uses only four categories, not ten:
+these four are noun (N, 22061 occurrences), verb (V, 6333 occurrences),
+adjective (J, 8817 occurrences) and other (O, 1179 occurrences). The mapping 
+from WTYPE to PDWTYPE is shown in table 6.
+
+.KF
+.TS
+center tab (%) box ;
+c | c | c.
+occurrences%WTYPE%PDWTYPE
+_
+.T&
+n | c | c.
+3751%A
+492%A%O
+47%C
+61%C%O
+261%I
+91%I%O
+16730%J
+8817%J%J
+55294%N
+22061%N%N
+5785%O
+351%O%O
+5939%P
+115%R
+115%R%O
+65%U
+69%U%O
+24392%V
+6333%V%V
+.TE
+
+.B
+Table 6.
+.R
+The mapping from WTYPE to PDWTYPE.
+
+.KE
+ 
+.B
+ALPHSYL
+.R
+
+If this = A, then the word is an abbreviation (130 occurrences); if S, the word is a
+suffix (282 occurrences); if P, a prefix (1374 occurrences); if H, the word is
+hyphenated (13716 occurrences); if T, a multi-word phrasal unit (436 occurrences). For all of
+these categories, NSYL = 0. For all other words ALPHYSL is blank.
+
+.KS
+.B
+STATUS
+.R
+
+The 15 possible categories of STATUS are listed in Table 7; these
+are as given in the Dolby database (Dolby et al., 1963) derived from 
+the Shorter Oxford English Dictionary, and perusal
+of Table 7 should make the meanings of these categories sufficiently
+clear.
+.KE
+
+.KF
+.TS
+center tab (%) box ;
+c | c | c.
+Status of Word%Code%occurrences
+_
+.T&
+l | c | n.
+Dialect%D%2780
+Alien%F%6003
+Archaic%A%959
+Colloquial%Q%405
+Capital%C%2
+Erroneous%N%0
+Nonsense%E%62
+Nonce Word%W%33
+Obsolete%O%10549
+Poetical%P%183
+Rare%R%2756
+Rhetorical%H%22
+Specialised%$%7731
+Standard%S%58065
+Substandard%Z%0
+
+.TE
+
+.B
+Table 7.
+.R
+The possible values of STATUS.
+
+.KE
+
+.KS
+.B
+VAR
+.R
+
+This refers to words which have the same spelling but different
+pronunciation and syntactic classes. When the pronunciations differ
+only in respect of stress (e.g. object, insult) VAR = O (212 occurrences).When the
+pronunciations differ phonemically (e.g. moderate, abuse), VAR = B (1233 occurrences).
+.KE
+
+.B
+CAP
+.R
+
+If this = C, then the word is normally written with an initial capital letter.
+This can be used as an indicator of proper nouns such as the names of
+people, towns, states and countries.
+
+.B
+IRREG
+.R
+
+This refers to the plurality of words. Where
+IRREG = Z, the word is plural (17441 occurrences), this can be used in conjunction with
+TQ2  to select irregular forms; where IRREG = Y, the
+word is a singular form (1024 occurrences); where IRREG = B, the word is both 
+the singular and the plural form (151 occurences); where IRREG = N, the word has no plural form
+(4407 occurences); where IRREG = P, the word is plural but acts singular (88 occurences)
+
+.B
+WORD
+.R
+
+The dictionary is ordered by the ascii sequence of these strings.
+Although there are 150837 entries in the dictionary, there are only
+115331 different strings. The distribution of homographs is as follows:
+
+.KS
+.TS
+center tab (%) ;
+c c
+c c
+c n.
+number of%number of
+entries%words
+1%94225
+2%22132
+3%2967
+4%703
+5%96
+6%20
+7%5
+.TE
+.KE
+
+.B
+PHON and DPHON
+.R
+
+The 12th edition of Daniel Jones's Pronouncing Dictionary (Jones,
+1963) was transferred to magnetic tape by Professor L. Guierre
+(Guierre, 1966). These are used as the basis of the phonetic transcriptions in the PHON field. The phonetic symbols used on this tape were
+adjusted following suggestions from Roger Mitton
+(see Mitton, 1986) to conform to the U.K. Alvey
+standard for machine readable phonetic transcription (Wells, 1986).
+The changes in phonetic symbols used from Coltheart (1981a) made by by Quinlan (1986) include: 
+devoiced consonants have been folded into their voiced equivalents;
+Coltheart (1981a) refers to the symbol 3, which has
+been ditched as no occurrence could be found; I( and U( have been
+mapped into I and U respectively.
+The symbols currently
+used in PHON field are a '/' character to denote syllable boundaries and 
+those presented in Table 8 with, where printable, the International 
+Phonetic Alphabet equivalents. The DPHON field uses these symbols without
+the syllable distinguisher, but with the inclusion of the TQ2 symbols
+following the phonetic transcription. DPHON also includes the following 
+three characters:  - + R. The hyphen is used to represent the hyphen in 
+hyphenated spellings. The 'R' character is used to represent a final
+R in the first part of hyphenated words which is only pronunced if the second part of a hyphenated word begins with a vowel. The '+' sign is used to indicate the division between the two parts of a compound noun written
+without a space (indicated by ALPHSYL = T) or hyphenation (indicated by 
+ALPHSYL = H).
+
+.KF
+.ps -2
+.TS
+center tab (%) box ;
+c s s | c s s.
+Consonants%Vowels
+_
+.T&
+c | c | c | c | c | c.
+IPA%Example%Database%IPA%Example%Database 
+Phonetic% %Phonetic%Phonetic% %Phonetic 
+Symbol% %Symbol%Symbol% %Symbol
+_
+.T&
+c | c | c | c | c | c.
+p%\o"p\(ul"ut%p%i:%b\o"e\(ul"\o"a\(ul"n%i
+b%\o"b\(ul"ut%b%a:%b\o"a\(ul"rn%A
+t%\o"t\(ul"en%t%\(sp:%b\o"o\(ul"rn%O (oh)
+d%\o"d\(ul"en%d%u:%b\o"o\(ul"\o"o\(ul"n%u
+k%\o"c\(ul"an%k%\(*u%b\o"u\(ul"rn%3
+m%\o"m\(ul"an%m%i%p\o"i\(ul"t%I
+n%\o"n\(ul"ot%n%\(*e%p\o"e\(ul"t%e
+l%\o"l\(ul"ike%l%de%p\o"a\(ul"t%&
+r%\o"r\(ul"un%r%^%p\o"u\(ul"tt%V
+f%\o"f\(ul"ull%f%\(*o%p\o"o\(ul"t%0 (zero)
+v%\o"v\(ul"ery%v%\(*w%g\o"o\(ul"\o"o\(ul"d%U
+s%\o"s\(ul"ome%s%\(pd%\o"a\(ul"bout%@
+z%\o"z\(ul"eal%z%ei%b\o"a\(ul"y%eI
+h%\o"h\(ul"at%h%ai%b\o"u\(ul"y%aI
+w%\o"w\(ul"ent%w%\(spi%b\o"o\(ul"y%oI (oh)
+g%\o"g\(ul"ame%g%o\(*w%n\o"o\(ul"%@U
+t\(is%\o"c\(ul"\o"h\(ul"ain%tS%a\(*w%n\o"o\(ul"\o"w\(ul"%aU
+dz%\o"J\(ul"ane%dZ%i\(pd%p\o"e\(ul"\o"e\(ul"r%I@
+\(*g%lon\o"g\(ul"%9%\(*e\(pd%p\o"a\(ul"\o"i\(ul"r%e@
+\(*h%\o"t\(ul"\o"h\(ul"in%T%\(*w\(pd%p\o"o\(ul"\o"o\(ul"r%u@
+\(*t%\o"t\(ul"\o"h\(ul"en%D
+\(is%\o"s\(ul"\o"h\(ul"ip%S
+\(*z%me\o"a\(ul"\o"s\(ul"ure%Z
+j%\o"y\(ul"es%j
+
+.TE
+.ps +2
+.B
+Table 8.
+.R
+Phonetic symbols used in the dictionary.
+
+.KE
+
+.bp
+.ce
+.ps +2
+.B
+Utility Programs
+.R
+.ps -2
+
+There are three utility programs available to access and modify the dictionary. These are written in the C programming language for the Unix operating system, but should be compilable for any system with a C compiler. The full UNIX manual pages
+are given in Appendix 2, but a brief description of there functions follows.
+
+.B
+dict
+.R
+
+The 
+.I dict
+program provides access to the mrc dictionary database file.
+A subset of words can be selected from the total set of 150837 words
+which fall within specified ranges of the properties of
+words classified in the database. 
+The filter can output either the entire record for a word, or 
+any set of the properties. 
+
+Psycholinguists can produce experimental stimulus files using this 
+filter in conjunction with UNIQ, GREP, SORT and other UNIX 
+and UNIX|STAT filters. Artificial Intelligence researchers can
+produce reduced dictionaries of restricted word sets and relevant
+properties using this filter.
+
+.B
+getentry
+.R
+
+The 
+.I getentry 
+tool complements the
+.I  dict 
+tool, in that it select the linguistic properties from the dictionary for a given set of 
+words, rather than the words which fall within values for specified properties.
+
+.B
+PsychDict
+.R
+
+The complete dictionary is large at 11MByte. This program reduces it to contain only those entries for which psychological measures are available. This program can produce a smaller dictionary which will be sufficient for the construction of psycholinguistic stimuli, but may not serve other purposes to
+which the whole dictionary can be put. The dictionary which results from
+using this tool is about 3MByte of sequential UNIX file and contains
+entries for 39300 words.
+.bp
+.B
+References.
+.R
+
+Amsler, R.A. (1984).
+Machine-Readable Dictionaries.
+In M.E. Williams (Ed.),
+.B
+Annual Review of Information Science and Technology (ARIST), 19,
+.R
+161-209.
+American Society for Information Science (ASIS); Knowledge Industry
+Publications, Inc.
+
+Brown, G.D.A. (1984).
+A frequency count of 190,000 words in ther London-Lund Corpus of English
+Conversation.
+.B
+Behavioural Research Methods Instrumentation and Computaters, 16
+.R
+(6), 502-532.
+
+Coltheart, M. (1981a).
+.B
+MRC Psycholinguistic Database User Manual: Version 1. 
+.R
+[Available from Professor Coltheart at Birkbeck College, London, U.K.]
+
+Coltheart, M. (1981b).
+The MRC Psycholinguistic Database.
+.B
+Quarterly Journal of Experimental Psychology, 33A,
+.R
+497-505.
+
+Dolby, J.L., Resnikoff, H.L. and MacMurray, F.L. (1963). A tape
+dictionary for linguistic experiments.
+.B
+In Proceedings of the American Federation of information processing
+societies: Fall Joint Computer Conference, Volume 24.
+.R
+Baltimore, MD: Spartan Books. 419-23.
+
+Gilhooly, K.J. and Logie, R.H. (1980). Age of acquisition, imagery,
+concreteness, familiarity and ambiguity measures for 1944 words.
+.B
+Behaviour Research Methods and Instrumentation, 12,
+.R
+395-427.
+
+Guierre, L. (1966). Un codage des mots anglais en vue de l'analyse
+automatique de leur structure phonetique.
+.B
+Etudes de linguistique
+appliquee, 4, 
+.R
+48-64.
+
+Kiss, G.R., Armstrong, C., Milroy, R. and Piper, J (1973). An
+associative thesaurus of English and its computer analysis. In
+Aitkin, A.J., Bailey, R.W., and Hamilton-Smith, N. (Eds.),
+.B
+The
+computer and Literary Studies. 
+.R
+Edinburgh: University Press.
+
+Kucera and Francis, W.N. (1967).
+.B
+Computational Analysis of
+Present-Day American English. 
+.R
+Providence: Brown University Press.
+
+Mitton, R. (1986).
+A description of the files CUVOALD.DAT and CUV2.DAT.
+.B
+The machine usable form of the Oxford Advanced Learner's Dictionary.
+.R
+The Oxford Text Archive: Oxford, U.K.
+
+Pavio, A., Yuille, J.C. and Madigan, S.A. (1968). Concreteness,
+imagery and meaningfulness values for 925 words.
+.B
+Journal of
+Experimental Psychology Monograph Supplement, 76
+.R
+(3, part 2).
+
+Quinlan, P. (1986). 
+.B
+Description of machine-readable dictionary
+files.
+.R
+Report. Dept. of Psychology, Birkbeck College, London.
+
+Svartik, J. and Quirk, R. (1980).
+.B
+A Corpus of English Conversation.
+.R
+Lund: Gleerup.
+
+Thorndike, E.L. and Lorge, I. (1944).
+.B
+The Teacher's Word Book of
+30,000 Words. New York: Teachers College,
+.R 
+Columbia University.
+
+Toglia, M.P. and Battig, W.R. (1978).
+.B
+Handbook of Semantic Word Norms. 
+.R
+New York: Erlbaum.
+
+Wells, J.W. (1986).
+A standardised machine-readable phonetic notation. In 
+.B
+Proceedings of the IEE conference on speech input/output: techniques and
+applications.
+.R
+London, Easter 1986.
+.bp
+.ce
+.B
+APPENDIX 1.
+.R
+
+Entries for the first 55 'words' in the dictionary after words starting 'A-' 
+beginning at line 446 in the dictionary file.
+.nf
+.ps -2
+.vs -2
+
+0403200000000000000000000000000000000000000 OOA    A.D.|eI/di|eIdi|22  
+0403200000000000000000000000000000000000000 OOA    A.M.|eI/em|eIem|22  
+0600000000000000000000000000000000000000000 N    C AACHEN||'Ak@n|   
+0805200000000000000000000000000000000000000 NN     AARDVARK|Ad/vAk|AdvAk|20  
+0600000000000000000000000000000000000000000 N    C AARHUS||'Ahus|   
+0900000000000000000000000000000000000000000 A T    AB INITIO||,&b I'nISI@U|   
+0500000000000000000000000000000000000000000 N     ZABACI||'&b@saI|   
+0504200002020020000150001000000000000000000 A      ABACK||@'b&k|   
+0504200002020020000150001000000000000000000 OO     ABACK|@/b&k|@b&k|02 
+0800400000000000000000000000000000000000000 N  F   ABACULUS|||  
+0606300000000000000000002000000000000000000 NN S   ABACUS|&/b@/k@s|'&b@k@s|200 
+0800000000000000000000000000000000000000000QN     ZABACUSES||'&b@k@sIz Q|   
+0500300000000000000000000000000000000000000 N  O   ABADA|||  
+0700300000000000000000000000000000000000000 N  S   ABADDON|||  
+0505200000000000000000000000000000000000000 AO O   ABAFT|@/bAft|@'bAft|02 
+0505200000000000000000000000000000000000000 RO S   ABAFT|@/bAft|@'bAft|02 
+0900300000000000000000000000000000000000000 N  O   ABAISANCE|||  
+0700300000000000000000000000000000000000000 N  S   ABAISER|||  
+1000400000000000000000000000000000000000000 V  O   ABALIENATE|||  
+0700300000000000000000000000000000000000000 N  D   ABALONE|||  
+0500200000000000000000000000000000000000000 V  O   ABAND|||  
+0700300017080150001500001510000395000000000 A  O   ABANDON||| 
+0707300017080150001500001510000395000000000 NN O  NABANDON|@/b&n/d@n|@'b&nd@n|020 
+0707300017080150001500001510000395000000000 VV S   ABANDON|@/b&n/d@n|@'b&nd@n|020 
+0900400025110240000140000000000000000000000 J      ABANDONED||@'b&nd@nd|   
+0900400025110240000140000000000000000000000 P      ABANDONED||@'b&nd@nd|   
+0900400025110240000140000000000000000000000 V      ABANDONED||@'b&nd@nd|   
+0900400025110240000140000000000000000000000 O  S   ABANDONED||| 
+0900400000000000000000000000000000000000000 N  S   ABANDONEE|||  
+1000000000000000000000000000000000000000000QV      ABANDONING||@'b&nd@nIN Q|   
+1111400010050100000160000359272348000000544QNN S  NABANDONMENT|@/b&n/d@n/m@nt|@'b&nd@nm@nt Q|0200 
+0800000000000000000000000000000000000000000 V      ABANDONS||@'b&nd@nz|   
+0700300000000000000000000000000000000000000 N  F   ABANDUM|||  
+0600300000000000000000000000000000000000000 N  O   ABANET|||  
+1000400000000000000000000000000000000000000 N  O   ABANNITION|||  
+1400600000000000000000000000000000000000000 N  $   ABARTICULATION|||  
+0504200000000000000020000000000000000000000 VV S   ABASE|@/beIs|@'beIs|02 
+0600300000000000000000000000000000000000000QP      ABASED||@'beIst Q|   
+0600300000000000000000000000000000000000000QV      ABASED||@'beIst Q|   
+0600300000000000000000000000000000000000000QO  S   ABASED||| 
+0908300002020020000000000226275262230280000QNN S  NABASEMENT|@/beIs/m@nt|@'beIsm@nt Q|020 
+0600000000000000000000000000000000000000000QV      ABASES||@'beIsIz Q|   
+0504200000000000000140000000000000000000000 VV S   ABASH|@/b&S|@'b&S|02 
+0700000000000000000000000000000000000000000 P      ABASHED||@'b&St|   
+0700000000000000000000000000000000000000000 V      ABASHED||@'b&St|   
+0700000000000000000000000000000000000000000 V      ABASHES||@'b&SIz|   
+0800000000000000000000000000000000000000000 V      ABASHING||@'b&SIN|   
+0700000000000000000000000000000000000000000 V      ABASING||@'beIsIN|   
+0500200000000000000000000000000000000000000 A  S   ABASK|||  
+0600300000000000000000000000000000000000000 N  O   ABASSI|||  
+0800300000000000000000000000000000000000000 V  O   ABASTARD|||  
+0807400000000000000000000000000000000000000QJJ     ABATABLE|@/beI/t@/bl|@beIt@bl Q|0200  
+0500200000000000000200000000000000000000000 N  O   ABATE||| 
+0504200000000000000200000000000000000000000 VV S   ABATE|@/beIt|@'beIt|02 
+0600000000000000000000000000000000000000000QP      ABATED||@'beItId Q|   
+
+.ps +2
+.vs +2
+.fi
+.bp
+.ce
+.B
+APPENDIX 2.
+.R
+
+The UNIX manual pages to the utility programs for the MRC Psycholinguistic Database: Machine Usable Dictionary, Version 2.

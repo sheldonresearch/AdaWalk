@@ -1,0 +1,3 @@
+step1: "data/raw/mypersonality_final/data_normalization_mypersonality.py"
+step2: "compare/doc2vec/doc2vec.py"
+step3: "compare/doc2vec/visual.py", "compare/doc2vec/score.py"

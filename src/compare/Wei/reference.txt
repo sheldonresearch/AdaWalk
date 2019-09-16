@@ -1,0 +1,3 @@
+Wei et al. Beyond the words: Predicting user personality from heterogeneous information, WSDM 2017
+
+this is actually CNNs with LIWC features

@@ -1,0 +1,3 @@
+Kampman et al. Investigating audio, video, and text fusion methods for end to end automatic personality prediction, ACL, pages 606-611, 2018
+
+this is just CNNs

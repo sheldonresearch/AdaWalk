@@ -1,0 +1,66 @@
+
+
+
+PsychDict(1)              USER COMMANDS              PsychDict(1)
+
+
+
+NAME
+     PsychDict - reduce MRC Psycholinguistic Database
+
+SYNOPSIS
+     PsychDict
+
+DESCRIPTION
+     The full MRC Psycholinguistic Database dictionary of  150837
+     entries  occupies  11MByte  of  disc space. This may be more
+     than many potential users are willing to spare. The  program
+     PsychDict  reduces the dictionary to containing only entries
+     for words about which  there  is  psychological  information
+     available.  That  is, which have entries for any of the fre-
+     quency counts, FAM, CONC, IMAG, MEANC, MEANP  or  AOA.  This
+     reduced  dictionary  will  contain  most  of the information
+     required for the preperation  of  psycholinguistic  stimuli,
+     although it will not offer a complete word list or syntactic
+     core. Similar samples for these items  can  be  produced  by
+     using _d_i_c_t with the -_e_n_t_r_y option.
+
+     The program directs output to the standard output, and  will
+     produce  a file of about 3MByte containing entries for 39300
+     words. An example command line would be:
+
+     _P_s_y_c_h_D_i_c_t > _f_i_l_e_n_a_m_e
+
+
+OPTIONS
+     _n_o_n_e
+
+SEE ALSO
+     M. Coltheart (1981) The MRC Psycholinguistic Database  Quar-
+     terly Journal of Experimental Psychology, 33A, 497-505
+
+     M. Wilson  (1987)  MRC  Psycholinguistic  Database:  Machine
+     Usable  Dictionary, Version 2.  Memo - IKBS Section, Ruther-
+     ford Appleton Lab.
+
+AUTHORS
+               Michael Wilson
+               Rutherford Appleton Laboratory,
+               Oxon, U.K.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   1
+
+
+

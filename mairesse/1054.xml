@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader type="ISBD-ER">
+    <fileDesc>
+   <titleStmt>
+    <title type="main">MRC Psycholinguistic Database Machine Usable Dictionary : expanded Shorter Oxford English Dictionary entries / Max Coltheart and Michael Wilson</title>
+        <author>Coltheart, M. (Max), 1939-</author>
+        <author>Wilson, Michael John, 1939-</author>
+      </titleStmt>
+      <extent>
+        <seg type="designation">Text data</seg>
+        <seg type="size">(16 files : ca. 12.5 MB)</seg>
+      </extent>
+      <publicationStmt>
+        <authority>[Depositor details removed]<date>1987-03-11</date></authority>
+        <distributor>
+          <orgName type="OTA">University of Oxford Text Archive</orgName>
+          <placeName>Oxford</placeName>
+          <address>
+            <orgName type="OTA">University of Oxford Text Archive</orgName>
+            <orgName type="UOXF">Bodleian Libraries, University of Oxford</orgName>
+            <addrLine>Broad Street</addrLine>
+            <addrLine>Oxford</addrLine>
+            <addrLine>OX1 3BG</addrLine>
+          </address>
+          <email>ota@bodleian.ox.ac.uk</email>
+        </distributor>
+        <idno type="OTA">1054</idno>
+        <idno type="ota">1054</idno>
+	<idno type="PURL">http://purl.ox.ac.uk/ota/1054</idno>
+        <availability n="OTA-new" status="free" rend="visible">
+          <licence target="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+	  Distributed by the University of Oxford under a Creative Commons
+	  Attribution-NonCommercial-ShareAlike 3.0 Unported License.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+     <titleStmt>
+      <title>MRC Psycholinguistic Database Machine Usable Dictionary : expanded Shorter Oxford English Dictionary entries</title>
+            <author>Coltheart, M. (Max), 1939-</author>
+            <author>Wilson, Michael John, 1939-</author>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>s.n.</publisher>
+            <pubPlace>s.l.</pubPlace>
+            <date>s.d</date>
+          </publicationStmt>
+          <notesStmt>
+            <note>For additional information see: Coltheart, Max.--"MRC Psycholinguistic database" in Quarterly Journal of Experimental Psychology 33A (1981):497-505.--Catalogued on RLIN</note>
+          </notesStmt>
+        </biblFull>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Encoding format: MS Word and UNIX</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="OTASH">
+          <bibl>University of Oxford Text Archive Subject Headings</bibl>
+        </taxonomy>
+        <taxonomy xml:id="LCSH">
+          <bibl>Library of Congress Subject Headings</bibl>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <date>1981</date>
+      </creation>
+      <langUsage>
+        <language ident="eng">English</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="#OTASH">
+          <term type="genre">Dictionaries</term>
+        </keywords>
+        <keywords scheme="#LCSH">
+          <term type="genre">Psycholinguistics -- Dictionaries</term>
+        </keywords>
+      </textClass>
+      <textClass>
+        <keywords scheme="http://www.ota.ox.ac.uk/processing">
+          <term type="class">legacy</term>
+          <term type="license">Free for non-commercial use</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change><date>2002-02-28</date><label>Cataloguer</label><name>Colley, Greg</name>Header recomposed with TEIXML header
+      </change>
+      <change><date>1998-01-14</date><label>Converter</label><name>Burnard, Lou</name>Header auto-generated from TOMES
+      </change>
+      <change><date>1991-01-02</date><label>Cataloguer</label><name>Day, Michael</name>MARC record generated from proto-header information
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="OTA-filemap" rend="visible" n="unrestricted">
+        <ab type="file">
+          <seg type="part">2</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">C source file (dict.c)</seg>
+          <ptr type="resourcePart" target="dict.c"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">3</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Software 'man' page (dict.man)</seg>
+          <ptr type="resourcePart" target="dict.man"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">4</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Data file</seg>
+          <ptr type="resourcePart" target="getentry.1"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">5</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">C source file (getentry.c)</seg>
+          <ptr type="resourcePart" target="getentry.c"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">6</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Software 'man' page (entry.man)</seg>
+          <ptr type="resourcePart" target="getentry.man"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">7</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Data file</seg>
+          <ptr type="resourcePart" target="mrc2.dct"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">8</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Documentation</seg>
+          <ptr type="resourcePart" target="mrc2.doc"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">9</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Data file</seg>
+          <ptr type="resourcePart" target="mrc2.n"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">10</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">C source file(newdict.c)</seg>
+          <ptr type="resourcePart" target="newdict.c"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">11</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Data file</seg>
+          <ptr type="resourcePart" target="psychdict.1"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">12</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">C source file</seg>
+          <ptr type="resourcePart" target="psychdict.c"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">13</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Software 'man' page (psychdict.man)</seg>
+          <ptr type="resourcePart" target="psychdict.man"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">14</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">ReadMe file</seg>
+          <ptr type="resourcePart" target="readme"/>
+        </ab>
+        <ab type="file">
+          <seg type="part">1</seg>
+          <seg type="mimetype">text/plain</seg>
+          <seg type="format">Data file</seg>
+          <ptr type="resourcePart" target="dict.1"/>
+        </ab>
+      </div>
+    </body>
+  </text>
+</TEI>

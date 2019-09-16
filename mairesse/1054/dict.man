@@ -1,0 +1,264 @@
+
+
+
+DICT(1)                   USER COMMANDS                   DICT(1)
+
+
+
+NAME
+     dict - filter MRC Psycholinguistic Database
+
+SYNOPSIS
+     dict [-_A...-_Z] [-_n_l_e_t_m_a_x _n ... -_a_o_a_m_i_n _n] [-_T_Y_P_E _s_t_r_i_n_g  ...
+     -_C_A_P _C] [+_T_Y_P_E _s_t_r_i_n_g ... +_C_A_P _C] [-_F_i_l_e _f_i_l_e_n_a_m_e]
+
+DESCRIPTION
+     The _d_i_c_t program provides access to themachine  usable  dic-
+     tionary file of the MRC Psycholinguistic Database.
+
+     The file contains information about a variety of  word  pro-
+     perties  (spelling,  pronunciation, syntactic category, fre-
+     quency and others).  The file is  based  around  the  150837
+     words  extracted  from various dictionaries. The composition
+     of this file is described in the documents listed under 'SEE
+     ALSO'.
+
+     This program acts as a filter on the database.  The  proper-
+     ties of the filter are specified by flags on the input line.
+     There are two stages to the  filter:  output  selection  and
+     restriction of category.
+
+     A subset of words can be selected  from  the  total  set  of
+     150837 words which fall within specified numerical ranges of
+     the properties of words classified in the  database.  There-
+     fore,  a  maximum  and minimum value can be given for a pro-
+     perty and the words with values  listed  which  fall  within
+     those  bounds will be output. Specific codes can be selected
+     or excluded for ordinal scaled  properties.  Ranges  can  be
+     specified  for  any  number of word properties. If no ranges
+     are specified, the maximum range will be assumed acceptable.
+     Therefore,  if  no ranges are given, the entire file will be
+     output. Not every  property  is  recorded  for  every  word,
+     therefore  words  without  a known value for a property will
+     have a null value recorded. To understand the fields see the
+     documents in 'SEE ALSO'.
+
+     The filter can output either the entire record for  a  word,
+     or  any set of the properties. For example, the spelling and
+     Kucera and Francis frequency could be output for words which
+     fall within a specified frequency range.
+
+     Experimental stimulus files can be  constructed  using  this
+     filter  in  conjunction  with  _u_n_i_q(1), _g_r_e_p(1), _s_o_r_t(1) and
+     other UNIX and UNIX|STAT filters.
+
+     Flags may be entered in any order. The -entry flag is incom-
+     patible  with any other output selection flag. Otherwise any
+     combination of flags is acceptable. The order of each output
+     field  is  set,  and is not dependent on the order of output
+     selection flags. The filter writes  to  standard  output  by
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   1
+
+
+
+
+
+
+DICT(1)                   USER COMMANDS                   DICT(1)
+
+
+
+     default.
+
+     The -File flag allows the use of any input file  other  than
+     the default dictionary. The input file must contain complete
+     records for each entry. Such files can be created  by  using
+     the -entry flag for output redirected to a file.
+
+     Each flag on the command line must be  separated  by  spaces
+     from  others and its argument if it has one. For example, to
+     select nouns with Kucera and Francis frequencies between 100
+     and  500, with between 3 and 6 phonemes and a meaningfulness
+     on the Pavio measure of between 500 and 700,  which  are  of
+     standard  usage  according to the Shorter Oxford Dictionary,
+     and  to  output  only   the   words   to   a   file   called
+     test1.materials :
+
+     _d_i_c_t +_P_S _N -_k_f_f_r_e_q_m_i_n _1_0_0 -_k_f_f_r_e_q_m_a_x _5_0_0 -_n_p_h_o_n_m_i_n _3 -_n_p_h_o_n_-
+     _m_a_x _6 -_m_e_a_n_p_m_i_n _5_0_0 -_m_e_a_n_p_m_a_x _7_0_0 -_W > _t_e_s_t_1._m_a_t_e_r_i_a_l_s
+
+OPTIONS
+     Output selection:
+
+                     -File filename - non-default input file
+
+                     Output selection:
+
+                     -A NLET number of letters
+                     -B NPHON number of phonemes
+                     -C NSYL number of syllables
+                     -D K-F-FREQ Kucera-Francis written frequency
+                     -E K-F-NCATS Kucera-Francis number of categories
+                     -F K-F-NSAMP Kucera-Francis number of samples
+                     -G T-L-FREQ Thorndyke-Lorge written Frequency
+                     -H BROWNF Brown verbal frequency
+                     -I FAM Familiarity
+                     -J CONC Concreteness
+                     -K IMAG Imagery
+                     -L MEANC Mean Colerado (Meaningfulness)
+                     -M MEANP Mean Pavio (Meaningfulness)
+                     -N AOA Age of Aquisition
+                     -O TQ2 Type
+                     -P WTYPE   Part of Speech
+                     -Q PDWTYPE Common part of speech
+                     -R ALPHSYL Alphasyllable
+                     -S STATUS
+                     -T VAR Varient phoneme
+                     -U CAP Capitalisation of words
+                     -V IRREG Irregular plural
+                     -W WORD
+                     -X PHON Phonetic transcription
+                     -Y DPHON Edited phonetic transcription
+                     -Z STRESS
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   2
+
+
+
+
+
+
+DICT(1)                   USER COMMANDS                   DICT(1)
+
+
+
+                     -entry The whole entry
+
+
+                     Restriction by category
+                     You specify the max and min on each scale
+
+                     -nletmax N  max length
+                     -nletmin N  min length
+                     -nphonmax N  max num phonemes
+                     -nphonmin N  min num phonemes
+                     -nsylmax N  max num syllables
+                     -nsylmin N  min num syllables
+                     -kffreqmax N  max kf frequency
+                     -kffreqmin N  min kf frequency  > 0
+                     -kfncatsmax N  max kf number categories
+                     -kfncatsmin N  min kf number categories
+                     -kfnsampmax N  max kf number samples
+                     -kfnsampmin N  min kf number samples
+                     -t-lmax N  max thorndyke-lorge
+                     -t-lmin N  min thorndyke-lorge
+                     -brownfmax N  max Brown verbal frequency
+                     -brownfmin N  min Brown verbal frequency
+                     -fammax N  max familiarity  < 700
+                     -fammin N  min familiarity  > 100
+                     -concmax N  max concreteness < 700
+                     -concmin N  min concreteness > 100
+                     -imagmax N  max imagability  < 700
+                     -imagmin N  min imagability  > 100
+                     -meancmax N  max mean Colorado meaningfulness < 700
+                     -meancmin N  min mean Colorado meaningfulness > 700
+                     -meanpmax N  max mean pavio meaningfulness < 700
+                     -meanpmin N  min pavio meaningfulness > 100
+                     -aoamax N  max age of aquisition  < 700
+                     -aoamin N  min age of aquisition  > 100
+
+                 Select entries which include (+) or exclude (-) values (arguments) for linguistic properties (flags).
+
+                -+TYPE Q2
+                -+IRREG ZBYPN
+                -+VAR BO
+                -+ALPH SPHAT
+                -+STATUS $ACDEFHOPQRSW
+                -+PS NJVARCUIPO
+                -+PD NJVO
+                -+CAP C
+
+SEE ALSO
+     M. Coltheart (1981) The MRC Psycholinguistic Database  Quar-
+     terly Journal of Experimental Psychology, 33A, 497-505
+
+     M. Wilson  (1987)  MRC  Psycholinguistic  Database:  Machine
+     Usable   Dictionary,   Version  2.   Memo  -  IKBS  Section,
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   3
+
+
+
+
+
+
+DICT(1)                   USER COMMANDS                   DICT(1)
+
+
+
+     Rutherford Appleton Lab.
+
+DIAGNOSTICS
+     _c_a_n'_t _o_p_e_n <_f_i_l_e_n_a_m_e>
+     program can't open database file <filename>
+
+     _i_l_l_e_g_a_l _s_w_i_t_c_h
+     an illegal switch was used on the input line
+
+     _b_a_d %_s _s_p_e_c_i_f_i_c_a_t_i_o_n
+     a value above the maximum was specified to a flag
+
+AUTHORS
+          Database:
+
+               MRC Psycholinguistic Database
+               MRC Grant SPG 977/912 to Max Coltheart
+               Birkbeck College
+
+               Extended by Michael Wilson
+               Rutherford Appleton Laboratory,
+               Oxon, U.K.
+
+          Program:
+               1986 Michael Wilson
+               MRC Applied Psychology Unit
+               Cambridge, U.K.
+
+
+BUGS
+          Can't currently select words by these variable length fields:
+          Word, Phonetic transcriptions, Stress
+
+          Can't exclude more than one value for an ordinal property.
+
+          24/7/86
+          modified to allow input file - 1/9/86
+          modified to allow selection of standard words only - 1/11/86
+          mofified to allow selection of ordinal scaled properties - 23/4/87
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   4
+
+
+

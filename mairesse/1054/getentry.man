@@ -1,0 +1,66 @@
+
+
+
+getentry(1)               USER COMMANDS               getentry(1)
+
+
+
+NAME
+     getentry - find entries for  a  set  of  words  in  the  MRC
+     Psycholinguistic Database
+
+SYNOPSIS
+     getentry _f_i_l_e_n_a_m_e
+
+DESCRIPTION
+     This utility will select the full entries in the  dictionary
+     that  correspond  to  an alphabetically sorted list of words
+     (one word per line) in a file, when given the name  of  that
+     file. The entries are output to standard output.
+
+     For example:
+
+     _g_e_t_e_n_t_r_y _f_i_l_e_n_a_m_e._i_n > _f_i_l_e_n_a_m_e._o_u_t
+
+     will produce the entries for the alphabetically sorted words
+     in  _f_i_l_e_n_a_m_e._i_n  if  they were present in the dictionary, in
+     the file _f_i_l_e_n_a_m_e._o_u_t.
+
+     Although it is possible to  use  _g_r_e_p(_1),  to  perform  such
+     searches, this utility is faster, since it only searches the
+     WORD field in the dictionary, and can accept a  longer  list
+     of words for searching.
+
+     The input file should be alphabetically sorted before  using
+     this utility. This can be achieved by using the _s_o_r_t(_1) com-
+     mand.
+
+
+OPTIONS
+     _n_o_n_e
+
+SEE ALSO
+     M. Coltheart (1981) The MRC Psycholinguistic Database  Quar-
+     terly Journal of Experimental Psychology, 33A, 497-505
+
+     M. Wilson  (1987)  MRC  Psycholinguistic  Database:  Machine
+     Usable  Dictionary, Version 2.  Memo - IKBS Section, Ruther-
+     ford Appleton Lab.
+
+AUTHORS
+               Michael Wilson
+               Rutherford Appleton Laboratory,
+               Oxon, U.K.
+
+
+
+
+
+
+
+
+
+Sun Release 3.2    Last change: 27 April 1987                   1
+
+
+
